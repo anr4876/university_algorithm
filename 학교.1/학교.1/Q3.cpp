@@ -7,10 +7,10 @@ int main() {
 	int number[2] ;
 	int arr[2] ;
 
-	cout << "숫자를 입력하시오 : ";
+	cout << "숫자 n을 입력하시오 : ";
 	cin >> number[0];
 
-	cout << "숫자를 입력하시오 : ";
+	cout << "숫자 m을 입력하시오 : ";
 	cin >> number[1];
 
 	arr[0] = number[0];
