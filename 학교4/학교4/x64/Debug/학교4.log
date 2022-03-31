@@ -1,0 +1,4 @@
+﻿  Q1.cpp
+C:\git_code_up\argolithm\학교4\학교4\Q1.cpp(67,13): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\git_code_up\argolithm\학교4\학교4\Q1.cpp(70,15): warning C4101: 'fout' :참조되지 않은 지역 변수입니다.
+  학교4.vcxproj -> C:\git_code_up\argolithm\학교4\x64\Debug\학교4.exe
