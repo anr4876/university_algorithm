@@ -1,3 +1,3 @@
-﻿  Q1.cpp
-C:\git_code_up\argolithm\학교5\학교5\Q1.cpp(46,13): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+﻿  Q2.cpp
+C:\git_code_up\argolithm\학교5\학교5\Q2.cpp(41,13): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
   학교5.vcxproj -> C:\git_code_up\argolithm\학교5\x64\Debug\학교5.exe
