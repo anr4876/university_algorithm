@@ -1,0 +1,10 @@
+﻿  Q1.cpp
+C:\git_code_up\argolithm\학교6\학교6\Q1.cpp(53,10): error C2065: 'w': 선언되지 않은 식별자입니다.
+  Q2.cpp
+C:\git_code_up\argolithm\학교6\학교6\Q2.cpp(64,6): warning C4101: 'edge' :참조되지 않은 지역 변수입니다.
+C:\git_code_up\argolithm\학교6\학교6\Q2.cpp(62,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
+C:\git_code_up\argolithm\학교6\학교6\Q2.cpp(62,15): warning C4101: 'l' :참조되지 않은 지역 변수입니다.
+C:\git_code_up\argolithm\학교6\학교6\Q2.cpp(98,13): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  Q3.cpp
+C:\git_code_up\argolithm\학교6\학교6\Q3.cpp(9,2): warning C4091: 'typedef ': 변수를 선언하지 않으면 'node' 왼쪽은 무시됩니다.
+  코드를 생성하고 있습니다...
