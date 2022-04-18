@@ -5,9 +5,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 using namespace std;
 
-#define NUM 100
+#define NUM 10
 
-void merge(int h, int m, const int u[], const int v[], int s[]) {
+void merge(int h, int m, int u[], int v[], int s[]) {
 	int i, j, k, ind;
 	i = 0; j = 0; k = 0;
 	while (i < h && j < m) {
@@ -29,7 +29,7 @@ void merge(int h, int m, const int u[], const int v[], int s[]) {
 	}
 }
 
-void RD(int num[], int a) { // 배열 랜덤숫자 대입후 중복 삭제
+void RD(int a ,int num[] ) { // 배열 랜덤숫자 대입후 중복 삭제
 
 	for (int i = 0; i < a ; i++) {
 		num[i] = rand() % a + 1;
@@ -44,7 +44,7 @@ void RD(int num[], int a) { // 배열 랜덤숫자 대입후 중복 삭제
 
 
 
-void mergesort(const int n, int s[]) {
+void mergesort(int n, int s[]) {
 	int i;
 	if (n > 1) {
 		int h = (int)(n / 2), m = n - h;
@@ -53,9 +53,11 @@ void mergesort(const int n, int s[]) {
 		for (i = 0; i < h; i++) {
 			u[i] = s[i];
 		}
+
 		for (i = 0; i < m; i++) {
 			v[i] = s[h + i];
 		}
+
 		mergesort(h, u);
 		mergesort(m, v);
 		merge(h, m, u, v, s);
@@ -67,12 +69,12 @@ void main() {
 	int num[NUM];
 	FILE* fin, * fout;
 
-	RD(num, NUM);
+	RD( NUM, num);
+
 	mergesort(NUM, num);
 
-
 	fopen_s(&fin, "test.txt", "w");
-	for (int i = 0; i < sizeof(num); i++) {
+	for (int i = 0; i < sizeof(num)/sizeof(int); i++) {
 		fprintf(fin, "%d\t", num[i]);
 		cout << num[i] << "\t";
 		if ((i + 1)  % 10 == 0 && i != 0) {
@@ -80,11 +82,8 @@ void main() {
 			cout << endl;
 		}
 	}
+
 	fclose(fin);
 	
-
-
-
-
 
 }
