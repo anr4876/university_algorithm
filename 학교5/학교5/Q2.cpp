@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int w[][5] = {
 	{0, 1, 1000, 1, 5},
 	{9, 0, 3, 2, 1000},
@@ -9,7 +8,6 @@ int w[][5] = {
 	{3, 1000, 1000, 1000, 0} 
 };
 int d[5][5], p[5][5];
-
 void floyd(int n, int w[][5], int d[][5], int p[][5]){
 	int i, j, k;
 	for (i = 0; i < n; i++) {
@@ -18,18 +16,14 @@ void floyd(int n, int w[][5], int d[][5], int p[][5]){
 			d[i][j] = w[i][j];
 		}
 	}
-	
-
 	for (k = 0; k < j; k++)
 		for (i = 0; i < n; i++)
 			for (j = 0; j < n; j++)
 				if (d[i][k] + d[k][j] < d[i][j]) {
 					p[i][j] = k + 1;
 					d[i][j] = d[i][k] + d[k][j];
-				}
-	
+				}	
 }
-
 void path(int q, int r)
 {
 	if (p[q][r] != 0) {

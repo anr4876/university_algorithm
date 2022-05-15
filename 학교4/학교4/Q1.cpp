@@ -5,7 +5,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 using namespace std;
 
-#define NUM 10
+#define NUM 100
 
 void merge(int h, int m, int u[], int v[], int s[]) {
 	int i, j, k, ind;

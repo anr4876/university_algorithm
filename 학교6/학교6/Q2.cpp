@@ -43,67 +43,45 @@ int find(int a){
 	return -1;
 }
 
-void merge(int x, int y)
-{
+void merge(int x, int y){
 	int i;
 	for (i = 0; i < nbVertex[y]; i++)
 		vertexSet[x][nbVertex[x] + i] = vertexSet[y][i];
 	nbVertex[x] += nbVertex[y];
 	nbVertex[y] = 0;
-
 	cout << endl << " contents of set " << x << " : ";
 	for (i = 0; i < nbVertex[x]; i++) {
-		cout << "\t" << vertexSet[x][i];
-	}
-}
-
-void kruskal(int edges[][3], int f[], int& nb_f)
-{
+		cout << "\t" << vertexSet[x][i];	}}
+void kruskal(int edges[][3], int f[], int& nb_f){
 	int i, j, k, l;
 	int p, q;
 	int edge[2];
 	int n = 1;
-
 	nb_f = 0;
 	for (i = 1; i <= N; i++) {
 		nbVertex[i] = 1;
-		vertexSet[i][0] = i;
-	}
-
+		vertexSet[i][0] = i;	}
 	edgesort();
-
-
 	while (n <= N) {
 		i = edges[n][0];
 		j = edges[n][1];
-
 		p = find(i);
 		q = find(j);
 		cout << endl << " n = " << n << " : i = " << i << " j = " << j << " p = " << p << " q = " << q << endl;
 		if (p == -1 || q == -1) {
-			cout << "Error of find function" << endl;
-		}
+			cout << "Error of find function" << endl;		}
 		else {
 			if (p != q) {
 				merge(p, q);
 				f[nb_f] = n;
-				nb_f++;
-			}
-		}
-		n++;
-	}
-}
-
-
+				nb_f++;			}		}
+		n++;	}}
 void main() {
 	int f[N], nb_f;
-
 	edgesort();
 	cout << "Sort edges by weight" << endl;
 	for (int i = 0; i < nb_edge; i++) {
-		cout << edges[i][0] << "  " << edges[i][1] << "  " << edges[i][2] << endl;
-	}
-
+		cout << edges[i][0] << "  " << edges[i][1] << "  " << edges[i][2] << endl;	}
 	kruskal(edges, f, nb_f);
 	cout << endl << endl;
 	cout << "Edges of Spanning Tree" << endl;
