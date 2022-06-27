@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "학교12", "학교12\학교12.vcxproj", "{D3F9F81C-4116-4CF2-AE37-2E2759064799}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3F9F81C-4116-4CF2-AE37-2E2759064799}.Debug|x64.ActiveCfg = Debug|x64
+		{D3F9F81C-4116-4CF2-AE37-2E2759064799}.Debug|x64.Build.0 = Debug|x64
+		{D3F9F81C-4116-4CF2-AE37-2E2759064799}.Debug|x86.ActiveCfg = Debug|Win32
+		{D3F9F81C-4116-4CF2-AE37-2E2759064799}.Debug|x86.Build.0 = Debug|Win32
+		{D3F9F81C-4116-4CF2-AE37-2E2759064799}.Release|x64.ActiveCfg = Release|x64
+		{D3F9F81C-4116-4CF2-AE37-2E2759064799}.Release|x64.Build.0 = Release|x64
+		{D3F9F81C-4116-4CF2-AE37-2E2759064799}.Release|x86.ActiveCfg = Release|Win32
+		{D3F9F81C-4116-4CF2-AE37-2E2759064799}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AA0787E-1779-4921-A3E1-46398ABFFCFD}
+	EndGlobalSection
+EndGlobal
